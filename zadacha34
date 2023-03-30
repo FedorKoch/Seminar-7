@@ -1,0 +1,14 @@
+stih = input("введите строку: ").lower()
+stihx = stih.split()
+volwes = ['а', 'о', 'э', 'е', 'и', 'ы', 'у', 'ё', 'ю', 'я']
+itog = list()
+for i in stihx:
+    k = 0
+    for l in i:
+        if l in volwes:
+            k += 1
+    itog.append(k)
+if len(set(itog)) == 1:
+    print("Парам пам-пам")
+else:
+    print("Пам парам")
